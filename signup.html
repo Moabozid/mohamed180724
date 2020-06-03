@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<title>JavaScript Form Validation using a sample registration form</title>
+<meta name="keywords" content="example, JavaScript Form Validation, Sample registration form" />
+<meta name="description" content="This document is an example of JavaScript Form Validation using a sample registration form. " />
+<link rel='stylesheet' href="sinupstyle.css">
+
+</head>
+<body onload="document.registration.userid.focus();">
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>kora tone</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home page.html">home page</a></li>
+                    <li><a href="talk about football.html">about</a></li>
+                    <li><a href="famous players.html">famous players</a></li>
+                    
+                    <li><a href="football.html">football</a></li>
+                    <li><a href="signup.html">sign up</a></li>
+                </ul>
+            </nav>
+        </div>
+        </header>
+<section id="showcase"> 
+    <div class="container">      
+        <h1>Registration Form</h1>
+         subscribe our site
+        <form name='registration' onSubmit="return formValidation();">
+        <ul>
+            <li><label for="username">Frist Name:</label></li>
+            <li><input type="text" name="username" size="20" required /></li>
+            <li><label for="username">last Name:</label></li>
+            <li><input type="text" name="username" size="20" required /></li>
+            <li><label for="email"><E-mail>E-mail:</label></li>
+            <li><input type="text" name="email" size="50"  required/></li>
+            <li><label for="phonenumbre">Phone numbre:</label></li>
+            <li><input type="numbers" name="phonenumbre" size="50" pattern="[0-9]{3}[0-9]{4}[0-9]{4}" required /></li>
+            <li><label for="gender">gender:</label></li>
+            <li><select name="gender">
+                    <option selected="gender" value="Default">(Please select your gender)</option>
+                    <option value="AF">Male</option>
+                    <option value="AL">Female</option>
+
+                </select></li>
+            <li><label for="adress">Adress:</label></li>
+            <li><input type="text" name="adress" size="50"  required/></li>
+             <li><label for="passid">Password</label></li>
+            <li><input type="password" name="passid"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required /></li>
+            <li><button type="submit" class="submit-button" formaction="home page.html">sign up</button></li>
+           
+        </ul>
+        </form></div></section>
+        <section id="complete">
+            <div class="container">
+           
+            </div>
+        </section>
+        <footer>
+            <p>football site &copy;2020</p>
+        </footer> 
+</body>
+</html>

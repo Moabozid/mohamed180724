@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="web design, affordable web design, professional web design" />
+<meta name="description" content="affordable and professional web design "  />
+<meta name="auther" content="mohamed abozid">
+
+<title>kora tone  | welcome </title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body> 
+    <header>
+    <div class="container">
+        <div id="branding">
+            <h1>kora tone</h1>
+        </div>
+        <nav>
+            <ul>
+              <li><a href="index.html">home page</a></li>
+                <li><a href="talk about football.html">about</a></li>
+                <li><a href="famous players.html">famous players</a></li>
+                
+                <li><a href="football.html">football</a></li>
+                <li><a href="signup.html">sign up</a></li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+
+    <section id="showcase">
+        <div class="container">
+            <h1>listen to the music of football </h1>
+            <p>Air forth after given, is let place brought them beast set waters all. Fowl was first give his herb to saying don't rule. Herb. Above beginning, whose their very, i grass firmament deep abundantly gathering. Rule winged fruitful day. For to. Said isn't without cattle so winged void sixth moveth let have yielding very bring whose seasons saw let heaven isn't it. He you image void she'd creepeth open seas. Of. Beast, whose have moved over shall be lights he. </p>
+            <hr><hr>
+            <h1>the greatest clubs of football in the world will be shown in the following table</h1>
+            <table border="1" width="800" height="400" class="table-1">
+                <tr> 
+                <th>continent </th>
+                <th>The most crowned club in the continental championships </th>
+                </tr>
+                <tr> 
+                <td>Asia</td>
+                <td>Al hilal (saudia)</td>
+                </tr>
+                <tr> 
+                <td>Europe</td>
+                <td>Real madrid (spain)</td>
+                </tr>
+                <tr> 
+                <td>Africa</td>
+                <td>Al ahly (egypt)</td>
+                </tr>
+                <tr> 
+                <td>South Amrica</td>
+                <td>Boca Juniors (argantina)</td>
+                </tr>
+                <tr> 
+                    <td>North Amrica</td>
+                    <td>ِAmrica (mexico)</td>
+                </tr>
+               
+                </table>
+                <hr><hr>
+            
+        </div>
+        <h2 style="text-align:center">best in the world</h2>
+        <div class="light">
+            <div class="mySlides">
+              <div class="numbertext">1 / 6</div>
+              <img src="messi.jpeg" style="width:50%">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">2 / 6</div>
+              <img src="ronaldo.jpeg" style="width:50%">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">3 / 6</div>
+              <img src="salah.jpeg" style="width:50%">
+            </div>
+              
+            <div class="mySlides">
+              <div class="numbertext">4 / 6</div>
+              <img src="mbappe.jpeg" style="width:50%">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">5 / 6</div>
+              <img src="neymar.jpeg" style="width:50%">
+            </div>
+              
+            <div class="mySlides">
+              <div class="numbertext">6 / 6</div>
+              <img src="De-Bruyne38.jpg.webp" style="width:50%">
+            </div>
+              
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+          
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+          
+            <div class="row">
+              <div class="column">
+                <img class="demo cursor" src="messi.jpeg" style="width:50%" onclick="currentSlide(1)" alt="Messi">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="ronaldo.jpeg" style="width:50%" onclick="currentSlide(2)" alt="Ronaldo">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="salah.jpeg" style="width:50%" onclick="currentSlide(3)" alt="Salah">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="mbappe.jpeg" style="width:50%" onclick="currentSlide(4)" alt="Mbappe">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="neymar.jpeg" style="width:50%" onclick="currentSlide(5)" alt="Neymar">
+              </div>    
+              <div class="column">
+                <img class="demo cursor" src="De-Bruyne38.jpg.webp" style="width:50%" onclick="currentSlide(6)" alt="De-Bruyne">
+              </div>
+            </div>
+          </div>
+         
+    </section>
+    <section id="complete">
+        <div class="container">
+         <img src="anda.jpg " width="60" height="80">
+         <img src="mr.jpeg " width="60" height="80">
+        </div>
+        
+
+
+    </section>
+    <footer>
+        <p>football site &copy;2020</p>
+    </footer>
+    /*script of slide show */  
+    <script>
+    var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("demo");
+          var captionText = document.getElementById("caption");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+          captionText.innerHTML = dots[slideIndex-1].alt;
+        }</script> 
+
+</body>
+
+</html>
+
+

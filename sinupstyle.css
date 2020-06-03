@@ -1,0 +1,103 @@
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+    background-color: black;
+}
+.container {
+    width: 80%;
+    margin:auto;
+    overflow: hidden;
+}
+ul{
+    margin: 0;
+    padding: 0;
+} 
+.submit-button{
+    height: 35px;
+    background: crimson;
+    border: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/*header**/
+header{
+    background: crimson;
+    color:azure;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    min-height: 40px;
+    border-bottom:black 4px solid;
+}
+
+header a{
+    color:black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+header li{
+    float: left;
+    padding: 0 20px 0 20px;
+    display: inline;
+}
+header h1{
+    font-size: 40px;
+    color: black;
+    text-transform: uppercase;
+}
+
+header #branding h1{
+    float: left;
+}
+header #branding{
+    margin: 0;
+}
+header nav{
+    float: right;
+    margin-top: 45px;
+}
+header a:hover{
+    color:#cccccc;
+    font-weight: bold;
+}
+/* showcase*/
+#showcase{
+    min-height: 650px;
+    background:whitesmoke ;
+    text-align: center;
+    color:black;
+    
+}
+#showcase h1{
+    margin-top: 50px;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+#showcase p{
+    font-size: 30px;
+    font-weight: bold;
+}
+#showcase input {
+    padding: 10px;
+    height: 10px;
+    width: 300px;
+}
+#complete{
+    min-height: 100px;
+    background:crimson;
+    text-align: center;
+    color:black;
+    border-top: black 4px solid;
+    
+}
+/*footer*/
+footer{
+    text-align: center;
+    color: azure;
+    font-size: 20px;
+    border-top: azure 4px solid;
+}
